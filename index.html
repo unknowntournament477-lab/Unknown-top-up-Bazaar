@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#087a3c">
+<title>UNKNOWN TOP UP SHOP</title>
+<style>
+:root{--g:#087a3c;--dg:#034b27;--lime:#b8f34a;--pale:#effaf1;--ink:#183528;--line:#d8e9dc}
+*{box-sizing:border-box}body{margin:0;background:#f3f8f4;color:var(--ink);font-family:Arial,"Noto Sans Bengali",sans-serif;padding-bottom:76px}
+header{height:60px;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:8px 14px;position:sticky;top:0;z-index:5;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:9px;font-weight:900;color:var(--dg);font-size:14px}.logo{width:38px;height:38px;border-radius:12px;background:linear-gradient(145deg,#c9ff70,#07843e);display:grid;place-items:center;color:#fff;font-weight:1000;font-size:19px}.brand small{display:block;font-size:9px;letter-spacing:1px;color:#72927d}
+.wrap{max-width:760px;margin:auto;padding:12px}
+.hero{background:linear-gradient(115deg,#034b27,#087a3c 58%,#a2df3e);color:#fff;padding:20px;border-radius:16px;position:relative;overflow:hidden;box-shadow:0 6px 16px #087a3c24}
+.hero:after{content:"UNKNOWN";position:absolute;right:-8px;bottom:-8px;font-size:42px;font-weight:1000;color:#ffffff18}
+.hero h1{font-size:21px;margin:0 0 7px}.hero p{font-size:12px;line-height:1.7;margin:0;max-width:80%}
+.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:11px 0}.quick button{border:1px solid var(--line);background:#fff;border-radius:11px;padding:10px 4px;color:var(--g);font-weight:800;font-size:11px}.quick b{display:block;font-size:19px;margin-bottom:3px}
+.notice{background:#e8f7eb;border-left:4px solid #15964e;border-radius:9px;padding:10px 12px;font-size:12px;line-height:1.6;margin:12px 0}
+.heading{display:flex;justify-content:space-between;align-items:center;font-weight:900;font-size:15px;margin:19px 2px 10px}.heading small{font-size:10px;color:#789080;font-weight:600}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.card{background:#fff;border:1px solid #d5e8d9;border-radius:12px;overflow:hidden;box-shadow:0 3px 10px #164b2512;cursor:pointer}
+.card img{display:block;width:100%;aspect-ratio:1.12;object-fit:cover}
+.card .info{padding:9px}.card strong{font-size:12px;display:block;min-height:28px}.card small{display:block;color:#789080;font-size:10px;margin:3px 0 8px}.buy{display:block;background:var(--g);color:#fff;text-align:center;padding:8px;border-radius:7px;font-size:11px;font-weight:900}
+.iconart{height:auto;aspect-ratio:1.12;display:grid;place-items:center;font-size:50px;background:linear-gradient(135deg,#07552b,#9bdc38);color:white}
+.page{display:none}.page.active{display:block}
+.panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px;margin:12px 0}
+.panel h2{font-size:17px;margin:0 0 12px}.field{margin:12px 0}.field label{display:block;font-size:12px;font-weight:800;margin-bottom:6px}.field input,.field select{width:100%;padding:12px;border:1px solid #d5e5d9;border-radius:9px;background:#fbfefb;font-size:14px}
+.paybox{background:#effaf1;border:1px dashed #72b98b;border-radius:11px;padding:12px;margin:12px 0;font-size:13px}.paynum{font-size:20px;font-weight:1000;color:var(--dg);margin:7px 0}
+.methods{display:flex;gap:8px}.methods label{flex:1;padding:10px;border:1px solid var(--line);border-radius:9px;font-weight:800;font-size:12px}
+.btn{width:100%;border:0;border-radius:10px;padding:13px;background:var(--g);color:#fff;font-weight:900;font-size:14px;margin-top:7px}
+.back{background:#e8f6eb;color:var(--g)}
+.catalog-item{width:100%;display:flex;justify-content:space-between;align-items:center;padding:13px;border:1px solid var(--line);border-radius:10px;background:#fff;margin:7px 0;font-weight:700;text-align:left}
+.catalog-item em{font-style:normal;color:#b76b19;font-weight:900}
+nav{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);padding:7px 3px calc(7px + env(safe-area-inset-bottom));z-index:8}
+nav button{border:0;background:none;color:#789080;font-size:10px;font-weight:800}nav button b{display:block;font-size:19px;margin-bottom:2px}nav button.active{color:var(--g)}
+footer{text-align:center;color:#8a9b90;font-size:10px;padding:18px}
+@media(min-width:560px){.grid{grid-template-columns:repeat(3,1fr)}.card img,.iconart{aspect-ratio:1.18}}
+</style></head>
+<body>
+<header><div class="brand"><div class="logo">U</div><div>UNKNOWN TOP UP SHOP<small>FAST • SAFE • EASY</small></div></div><button class="buy" style="border:0" onclick="page('home')">HOME</button></header>
+<main class="wrap">
+<section id="home" class="page active">
+<div class="hero"><h1>UNKNOWN TOP UP SHOP</h1><p>আপনার পছন্দের Free Fire টপ-আপ অর্ডার করুন সহজেই। বিকাশ ও নগদে পেমেন্ট করুন।</p></div>
+<div class="quick"><button onclick="page('support')"><b>◉</b>SUPPORT</button><button onclick="page('orders')"><b>▣</b>MY ORDERS</button><button onclick="page('order')"><b>৳</b>PAYMENT</button></div>
+<div class="notice">📢 <b>নোটিশ:</b> অর্ডার করার আগে Player UID ভালোভাবে যাচাই করুন। পেমেন্ট করার পর Transaction ID জমা দিন।</div>
+<div class="heading">PREMIUM CUSTOMER 👑 <small>UNKNOWN TOP UP SHOP</small></div>
+<div class="notice">🎮 Welcome to UNKNOWN TOP UP SHOP — আপনার পছন্দের টপ-আপ সার্ভিস বেছে নিন।</div>
+<div class="heading">FREE FIRE TOP UP 🔥 <small>পছন্দের প্যাকেজ বেছে নিন</small></div>
+<div class="grid">
+<div class="card" onclick="catalog('UID TOPUP [BD]')"><img src="assets/uid-bd.jpg"><div class="info"><strong>UID TOPUP [BD]</strong><small>Diamond Top Up</small><span class="buy">অফার দেখুন</span></div></div>
+<div class="card" onclick="catalog('WEEKLY')"><img src="assets/weekly.jpg"><div class="info"><strong>WEEKLY</strong><small>Weekly Membership</small><span class="buy">অফার দেখুন</span></div></div>
+<div class="card" onclick="catalog('MONTHLY')"><img src="assets/monthly.jpg"><div class="info"><strong>MONTHLY</strong><small>Monthly Membership</small><span class="buy">অফার দেখুন</span></div></div>
+<div class="card" onclick="catalog('WEEKLY + MONTHLY')"><img src="assets/weekly-monthly.jpg"><div class="info"><strong>WEEKLY + MONTHLY</strong><small>Special Offer</small><span class="buy">অফার দেখুন</span></div></div>
+<div class="card" onclick="catalog('WEEKLY LITE [BD]')"><img src="assets/weekly-lite-bd.jpg"><div class="info"><strong>WEEKLY LITE [BD]</strong><small>Weekly Lite</small><span class="buy">অফার দেখুন</span></div></div>
+<div class="card" onclick="catalog('LEVEL UP PASS')"><img src="assets/level-up-pass.jpg"><div class="info"><strong>LEVEL UP PASS</strong><small>Level Up Pass</small><span class="buy">অফার দেখুন</span></div></div>
+<div class="card" onclick="catalog('INDONESIA SERVER TOP UP')"><div class="iconart">🇮🇩</div><div class="info"><strong>INDONESIA SERVER TOP UP</strong><small>Indonesia Server</small><span class="buy">অফার দেখুন</span></div></div>
+<div class="card" onclick="catalog('LIKE')"><div class="iconart">👍</div><div class="info"><strong>LIKE</strong><small>Like Service</small><span class="buy">অফার দেখুন</span></div></div>
+</div>
+<div class="notice">পেমেন্ট করার আগে সঠিক প্যাকেজ ও মূল্য নিশ্চিত করুন।</div><footer>© UNKNOWN TOP UP SHOP</footer>
+</section>
+<section id="catalog" class="page"><div class="panel"><h2 id="catTitle">প্যাকেজ নির্বাচন</h2><div id="offers"></div><button class="btn back" onclick="page('home')">ফিরে যান</button></div></section>
+<section id="order" class="page"><div class="panel"><h2>🛒 অর্ডার করুন</h2><div class="notice" id="chosen">প্রোডাক্ট নির্বাচন করুন</div>
+<div class="field"><label>প্যাকেজ / পরিমাণ</label><input id="pack" placeholder="নির্বাচিত প্যাকেজ"></div>
+<div class="field"><label>Player Name</label><input id="pname" placeholder="প্লেয়ারের নাম"></div>
+<div class="field"><label>Player UID</label><input id="uid" inputmode="numeric" placeholder="আপনার Free Fire UID"></div>
+<div class="field"><label>মোবাইল নম্বর</label><input id="phone" inputmode="tel" placeholder="আপনার মোবাইল নম্বর"></div>
+<div class="field"><label>পেমেন্ট মাধ্যম</label><div class="methods"><label><input type="radio" name="method" value="বিকাশ" checked> বিকাশ</label><label><input type="radio" name="method" value="নগদ"> নগদ</label></div></div>
+<div class="paybox"><b>বিকাশ / নগদ পেমেন্ট নম্বর</b><div class="paynum">01300564054</div><button class="btn back" onclick="navigator.clipboard?.writeText('01300564054')">নম্বর কপি করুন</button><p>উপরের নম্বরে Send Money করে Transaction ID দিন।</p></div>
+<div class="field"><label>Transaction ID</label><input id="trx" placeholder="Transaction ID লিখুন"></div>
+<button class="btn" onclick="submitOrder()">অর্ডার জমা দিন</button><p id="msg"></p></div></section>
+<section id="orders" class="page"><div class="panel"><h2>MY ORDERS</h2><p>এই ডেমো সংস্করণে অর্ডার ব্রাউজারে সাময়িকভাবে দেখানো হবে।</p><div id="orderList">এখনো কোনো অর্ডার নেই।</div></div></section>
+<section id="support" class="page"><div class="panel"><h2>CUSTOMER SUPPORT</h2><p>সাহায্যের জন্য নিচের পেমেন্ট নম্বর ও অর্ডার তথ্য প্রস্তুত রাখুন।</p><div class="paybox"><b>Support / Payment Number</b><div class="paynum">01300564054</div></div></div></section>
+</main>
+<nav><button class="active" onclick="page('home',this)"><b>⌂</b>Home</button><button onclick="page('order',this)"><b>＋</b>Order</button><button onclick="page('orders',this)"><b>▣</b>My Orders</button><button onclick="page('support',this)"><b>☏</b>Support</button></nav>
+<script>
+const lists={
+'UID TOPUP [BD]':[['25 Diamond','22'],['50 Diamond','36'],['115 Diamond','79'],['240 Diamond','158'],['355 Diamond','237'],['480 Diamond','316'],['505 Diamond','336'],['610 Diamond','400'],['850 Diamond','558'],['1090 Diamond','716'],['1240 Diamond','800'],['1720 Diamond','1116'],['2090 Diamond','1358'],['2530 Diamond','1610'],['4010 Diamond','2568'],['5060 Diamond','3220'],['10120 Diamond','6440']],
+'WEEKLY':[['Weekly','158'],['Weekly 2X','316'],['Weekly 3X','474'],['Weekly 4X','632'],['Weekly 5X','790'],['Weekly 8X','1264'],['Weekly 10X','1580']],
+'MONTHLY':[['Monthly','790'],['2X Monthly','1580']],
+'WEEKLY + MONTHLY':[['Weekly + Monthly','948']],
+'WEEKLY LITE [BD]':[['Weekly Lite','—']],
+'LEVEL UP PASS':[['Level Up Pass','—']],
+'INDONESIA SERVER TOP UP':[['Indonesia Server Pack','দাম জানতে যোগাযোগ করুন']],
+'LIKE':[['100 Likes','দাম জানতে যোগাযোগ করুন'],['500 Likes','দাম জানতে যোগাযোগ করুন'],['1000 Likes','দাম জানতে যোগাযোগ করুন']]
+};
+let selectedCategory='';
+function page(id,btn){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('nav button').forEach(x=>x.classList.remove('active'));if(btn)btn.classList.add('active');window.scrollTo(0,0)}
+function catalog(cat){selectedCategory=cat;document.getElementById('catTitle').textContent=cat+' — Select Recharge';let box=document.getElementById('offers');box.innerHTML='';(lists[cat]||[]).forEach(([n,p])=>{let b=document.createElement('button');b.className='catalog-item';b.innerHTML='<span>'+n+'</span><em>'+(p==='—'||p.includes('দাম')?p:p+'৳')+'</em>';b.onclick=()=>{document.getElementById('pack').value=n;document.getElementById('chosen').textContent=cat+' / '+n+' — '+p+'৳';page('order')};box.appendChild(b)});page('catalog')}
+function submitOrder(){let pack=document.getElementById('pack').value,uid=document.getElementById('uid').value,trx=document.getElementById('trx').value;if(!pack||!uid||!trx){document.getElementById('msg').textContent='প্যাকেজ, UID এবং Transaction ID পূরণ করুন।';return}let obj={pack,uid,trx,phone:document.getElementById('phone').value,category:selectedCategory};let old=JSON.parse(localStorage.getItem('unknownOrders')||'[]');old.unshift(obj);localStorage.setItem('unknownOrders',JSON.stringify(old));document.getElementById('msg').textContent='অর্ডারটি এই ডিভাইসে সংরক্ষিত হয়েছে।';renderOrders()}
+function renderOrders(){let a=JSON.parse(localStorage.getItem('unknownOrders')||'[]');document.getElementById('orderList').innerHTML=a.length?a.map(x=>'<div class="notice"><b>'+x.category+'</b><br>'+x.pack+'<br>UID: '+x.uid+'<br>TrxID: '+x.trx+'</div>').join(''):'এখনো কোনো অর্ডার নেই।'}
+renderOrders();
+</script></body></html>
